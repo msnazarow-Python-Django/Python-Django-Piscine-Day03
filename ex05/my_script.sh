@@ -7,6 +7,6 @@ pip --version
 
 pip install -r requirement.txt
 
-./manange.py makemigrations
-./manange.py migrate
-./manange.py runserver
+./manage.py makemigrations
+./manage.py migrate
+./manage.py runserver
