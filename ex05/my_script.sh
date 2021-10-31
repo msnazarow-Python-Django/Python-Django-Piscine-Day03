@@ -1,17 +1,12 @@
 #!/bin/sh
 
 python3 -m venv django_venv
+. django_venv/bin/activate
 
-source django_venv/bin/activate
+pip --version
 
 pip install -r requirement.txt
 
-#django-admin startproject hello_world
-
-cd hello_world
-
-#python manage.py startapp hello_app
-
-python manage.py migrate
-
-python manage.py runserver
+./manange.py makemigrations
+./manange.py migrate
+./manange.py runserver
